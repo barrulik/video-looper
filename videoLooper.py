@@ -3,6 +3,8 @@
 
 # import cv2 library
 import cv2
+import os
+os.mkdir("images")
 fileName = input("type the file path: ")
 # videoCapture method of cv2 return video object
 # Pass absolute address of video file
@@ -75,5 +77,5 @@ out = cv2.VideoWriter(fileName + '_result.mp4',cv2.VideoWriter_fourcc(*'mp4v'), 
 for i in range(len(frame_list)):
     out.write(frame_list[i])
 out.release()
-
+os.rmdir("images")
 print("done")
