@@ -1,9 +1,10 @@
 # Video looper
-A program that makes the perfect video to loop
+A program that reverses a video and stitches it to the original so you can have the perfect gif (returns mp4)
 
 ## Program usage:
-just create a directory in the directory of the file named "images" (without the ""), then run the program, and type the prefared file's path.
-it's result will simply be named (assumed the mp4 file is name test.mp4) test_result.mp4
+1. Install python. 
+2. Run the python file
+3. see result in the file's path with the name originalName_result.mp4 (assuming originalName.mp4 is the name of the file you have provided)
 
 
 ## My usage:
