@@ -76,7 +76,7 @@ img = cv2.imread("./images/frame0.jpg")
 height, width, layers = img.shape
 size = (width,height)
 
-out = cv2.VideoWriter(fileName + '_result.mp4',cv2.VideoWriter_fourcc(*'mp4v'), 60,size)
+out = cv2.VideoWriter(fileName + '_result.mp4',cv2.VideoWriter_fourcc(*'mp4v'), cap.get(cv2.CAP_PROP_FPS) ,size)
  
 for i in range(len(frame_list)):
     out.write(frame_list[i])
